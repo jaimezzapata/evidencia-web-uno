@@ -14,7 +14,7 @@ El sistema debe estar estructurado obligatoriamente mediante **tres niveles de c
 
 - **Nivel 1 — Menú Principal (Ciclo 1):**  
   Debe repetirse hasta que se cierre la caja de la tienda:
-  1. Atender cliente
+  1. Atender cliente - menuDepartamentos
   2. Ver balance de la jornada
   3. Salir del sistema
 

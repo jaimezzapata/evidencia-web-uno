@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Club | Recepción y ventas</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            color: #17324a;
+            background: linear-gradient(135deg, #e8f5ff, #f5f9fc);
+        }
+        main {
+            width: 100%;
+            max-width: 680px;
+            padding: 36px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 12px 38px rgba(19, 50, 74, 0.12);
+        }
+        h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 40px); }
+        p { line-height: 1.65; }
+        .etiqueta { color: #087e84; font-weight: bold; letter-spacing: 0.06em; }
+        .nota { background: #eaf9f7; border-left: 4px solid #19a89b; padding: 12px 16px; border-radius: 6px; }
+        code { background: #ecf1f7; padding: 2px 5px; border-radius: 4px; }
+        button { border: 0; border-radius: 10px; padding: 14px 20px; color: white; background: #087e84; font-weight: bold; font-size: 16px; cursor: pointer; }
+        button:hover { background: #07666b; }
+        button:focus-visible { outline: 3px solid #ffba49; outline-offset: 3px; }
+    </style>
+</head>
+<body>
+    <main>
+        <p class="etiqueta">EVALUACIÓN WEB 1 · JAVASCRIPT</p>
+        <h1>FitZone Club</h1>
+        <p>Sistema de recepción, facturación y balance de caja para un gimnasio.</p>
+        <p class="nota">Usa los menús que aparecen en ventanas emergentes. La factura y el balance también se muestran en la consola del navegador (<strong>F12</strong>).</p>
+        <button type="button" onclick="iniciarSistema()">Iniciar recepción</button>
+        <p>Para volver a comenzar después de cerrar la recepción, pulsa nuevamente <strong>Iniciar recepción</strong>. Los acumulados se conservan mientras esta página siga abierta.</p>
+    </main>
+
+    <!-- El script se carga después del contenido HTML. -->
+    <script src="./app.js"></script>
+</body>
+</html>
